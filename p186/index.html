@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script
+        src="https://unpkg.com/aframe-spe-particles-component@1.0.4/dist/aframe-spe-particles-component.min.js"></script>
+    <title>Fireflys in a dark night</title>
+</head>
+
+<body>
+    <a-scene>
+        <a-entity position="0 0 0" spe-particles="
+            color:#FAE78C,#FBF20F,#000000, #000000 #000000 #000000#EAD71F,#FAE88C,#000000, #000000 #000000 #000000#FBF60F,#EAD11F,#000000, #000000 #000000#FAE98C,#F1F20F,#EED71F,#000000;
+            distribution:sphere;
+            randomize-velocity:true;
+            radius:200;
+            particle-count:1000;
+            velocity:0.00000000000000000000001;
+            velocity-spread:10;
+            drag:1;
+            duration:-1;
+            max-age:10000;
+            blending:additive;
+            size:1,1,1,0,0;
+            active-multiplier:100;
+            "></a-entity>
+        <a-sky color="black"></a-sky>
+        <a-camera position="0 0 190"></a-camera>
+    </a-scene>
+</body>
+
+</html>
